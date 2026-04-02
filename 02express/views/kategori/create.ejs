@@ -1,0 +1,27 @@
+<%- include('../partials/_createhead_kategori.ejs') %>
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-success text-white">
+            <h4 class="mb-0">Tambah Kategori Baru</h4>
+        </div>
+        <div class="card-body">
+            <form action="/kategori/store" method="POST">
+                <div class="mb-3">
+                    <label class="form-label font-weight-bold">Nama Kategori</label>
+                    <input type="text" class="form-control" name="nama_kategori" placeholder="Masukkan nama kategori..." required />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Deskripsi</label>
+                    <textarea class="form-control" name="deskripsi" rows="3" placeholder="Tambahkan deskripsi singkat..." required></textarea>
+                </div>
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-success">Simpan Kategori</button>
+                    <a href="/kategori" class="btn btn-secondary">Kembali</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
